@@ -1,0 +1,11 @@
+{
+  "name": "lobbyist-registrar-scraper",
+  "version": "1.0.0",
+  "description": "A scraper bot that pulls data from the Toronto lobbyist registrar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
