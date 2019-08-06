@@ -67,9 +67,10 @@ const lobbyistRegistrarScraper = async function() {
         const browserMemoryObject = {};
 
         for (let selector in selectors) {
-          browserMemoryObject[selector] = document.querySelector(
-            selectors[selector]
-          ).innerText;
+          const elementSelector = document.querySelector(selectors[selector]);
+          const value =
+            elementSelector === null ? null : elementSelector.innerText;
+          browserMemoryObject[selector] = value;
         }
 
         return browserMemoryObject;
